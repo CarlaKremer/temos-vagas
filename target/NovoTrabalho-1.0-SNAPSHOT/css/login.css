@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+.container {
+    flex: 1 0 auto;
+
+}
+
+.cadastre{
+    padding-top: 30px;
+}
+
+h4{
+    font-family: 'Rubik', sans-serif;
+    font-weight:600 !important;
+}

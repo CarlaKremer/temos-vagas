@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+
+<body class="grey lighten-4">
+    <!--Navbar-->
+    <div class="navbar-fixed ">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <!-- web -->
+                    <a href="index.jsp" class="brand-logo deep-orange-text text-lighten-2">Temos Vagas</a>
+                    <ul class="lista right hide-on-med-and-down ">
+                        <li><a href="cadastroUsuario.html" class=" deep-orange-text text-lighten-2">Cadastre-se</a></li>
+                        <li><a href="login.jsp" class=" deep-orange-text text-lighten-2">Login</a></li>
+                    </ul>
+                    <!-- mobile -->
+                    <ul id="nav-mobile" class="sidenav">
+                        <li><a href="cadastroUsuario.html" class=" deep-orange-text text-lighten-2">Cadastre-se</a></li>
+                        <li><a href="login.jsp" class=" deep-orange-text text-lighten-2">Login</a></li>
+                    </ul>
+                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--fim Navbar-->
+                   
+    <main>
+        <div class="container s12 m6">
+            <form action="ServUsuario" method="POST">
+                <!-- Dados empresa -->
+                <section>
+                    <h4>Cadastre sua empresa</h4>
+                    <div class="row s12">
+                        <div class="input-field col m12">
+                            <input id="empresa" type="text" class="validate" name="razao_social" required>
+                            <label for="first_name">Razão Social</label>
+                        </div>
+                    </div>
+                    <div class="row s12">
+                        <div class="input-field col m6">
+                            <input id="CNPJ" type="text" class="validate" name="cnpj" required>
+                            <label for="first_name">CNPJ</label>
+                        </div>
+
+                        <div class="input-field col m6">
+                            <input id="inscricaoEstadual_RG" type="text" class="validate" name="inscricao_estadual" required>
+                            <label for="first_name">Inscrição Estadual</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row s12">
+
+                        <div class="input-field col s6">
+                            <input id="atuacao" type="text" class="validate" name="atuacao" required>
+                            <label>Atuação</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="email" class="validate" name="email" required>
+                            <label>E-mail</label>
+                        </div>
+                    </div>
+                    <div class="row s12">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="telefoneEmpresa" type="tel" class="validate" name="telefone1" required>
+                            <label for="icon_telephone">Telefone</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="celularEmpresa" type="tel" class="validate" name="telefone2" required>
+                            <label for="icon_telephone">Celular</label>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Dados login -->
+                <section>
+                    <h5>Dados de Login</h5>
+                    <div class="row s12">
+                        <div class="input-field col s6">
+                            <input id="usuarioEmpresa" type="text" class="validate" name="usuario" required>
+                            <label for="icon_telephone">Usuário</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="senhaEmpresa" type="password" class="validate" name="senha" required>
+                            <label for="icon_telephone">Senha</label>
+                        </div>
+                    </div>
+                </section>
+
+                <button class="btn waves-effect waves-light right deep-orange lighten-2" type="submit">OK
+                    <i class="material-icons right">send</i>
+                  </button><br><br><br>
+                   
+            </form>
+           
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="page-footer grey darken-4 center">
+        © 2021 Copyright Text
+    </footer>
+    <!--fim Footer-->
+
+</body>
+
+</html>
+

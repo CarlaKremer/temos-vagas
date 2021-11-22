@@ -1,0 +1,16 @@
+Control\ServeLoginho.class
+Control\ServVaga.class
+DAO\EmpresaDAO.class
+Control\ServIndex.class
+DTO\EmpresaDTO.class
+DAO\VagasDAO.class
+Control\ServCandidato.class
+DAO\CandidatoDAO.class
+Control\ServListar.class
+com\mycompany\novotrabalho\JAXRSConfiguration.class
+DTO\Vagas.class
+Control\ServUsuario.class
+com\mycompany\novotrabalho\resources\JavaEE8Resource.class
+DTO\CandidatoDTO.class
+DTO\VagasDTO.class
+Util\ConexaoUtil.class
